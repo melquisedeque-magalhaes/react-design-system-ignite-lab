@@ -1,5 +1,5 @@
-<div with="30px" height="30px" align="center">
-  <img alt="Logo IgniteLab" title="Ignite Lab | ReactJS" src="./public/react.svg">
+<div align="center">
+  <img with="30px" height="30px" alt="Logo IgniteLab" title="Ignite Lab | ReactJS" src="./public/react.svg">
 </div>
 <br>
 
