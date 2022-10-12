@@ -1,4 +1,4 @@
-<div with="50px" height="50px" align="center">
+<div with="30px" height="30px" align="center">
   <img alt="Logo IgniteLab" title="Ignite Lab | ReactJS" src="./public/react.svg">
 </div>
 <br>
@@ -13,21 +13,22 @@ Nesta edição, será construido um Design System do Figma ao React de um projet
     - PhosporIcon
     - Color Styleguide
   - ReactJS
-    - vitejs
-    - tailwindcss
-    - postcss
-    - storyBook
-    - clsx
-    - radix
-      - slot
+    - Vitejs
+    - Tailwindcss
+    - Postcss
+    - StoryBook
+    - Clsx
+    - Radix
+      - Slot
+      - Checkbox
 
 ## Aprendizados:
+
 ### Design System
 Design System corresponde à um documento vivo com todos os componentes e propriedades para facilitar a integração entre os times de desenvolvimento (ux/ui e desenvolvedores). Ao ser adotada esta convenção, os projetos irão seguir uma mesma linha visual, porém, o Desing System vai muito mais além do que apenas a criação de padrões de cor e tipografia.
 
 ### StoryBook
 Ferramenta de visualização de componentes de forma isolada. <br>
-Possui diversos plugins, como por exemplo, de acessibilidade.
 
 ### ArgTypes
 Possibilita flexibilidade de alterar diretamente pela interface do storybook algumas props passadas para o componente.
@@ -59,15 +60,23 @@ Possibilita flexibilidade de alterar diretamente pela interface do storybook alg
       '2xl': 32,
     },
     colors: {
-      // Definindo as cores que o tailwind vai ter, com base no designSystem
-      'gray-900': '#121214',
-      'gray-800': '#202024',
-      'gray-400': '#7c7c8a',
-      'gray-200': '#c4c4cc',
-      'gray-100': '#e1e1e6',
+      black: '#000000',
+      white: '#ffffff',
 
-      'cyan-500': '#81d8f7',
-      'cyan-300': '#9be1fb',
+      transparent: 'transparent',
+
+      gray: {
+        900: '#121214',
+        800: '#202024',
+        400: '#7C7C8A',
+        200: '#C4C4CC',
+        100: '#E1E1E6',
+      },
+      
+      cyan: {
+        500: '#81D8F7',
+        300: '#9BE1FB'
+      }
     },
   }
 ```
