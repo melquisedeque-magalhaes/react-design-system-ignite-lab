@@ -13,6 +13,12 @@
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },
+  "husky": {
+    "hooks": {
+        "pre-commit": "yarn lint && yarn typecheck",
+        "pre-push": "yarn test -b"
+    }
+  },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.0",
     "@radix-ui/react-slot": "^1.0.0",
