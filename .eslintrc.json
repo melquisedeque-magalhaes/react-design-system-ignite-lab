@@ -1,3 +1,3 @@
 {
-  "extends": ["plugin:storybook/recommended", "@rocketseat/eslint-config/react"]
+  "extends": ["plugin:storybook/recommended", "@rocketseat/eslint-config/react"],
 }
