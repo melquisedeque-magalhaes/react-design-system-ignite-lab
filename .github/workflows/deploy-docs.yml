@@ -18,12 +18,12 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm ci
+        run: yarn ci
 
       - name: Build StoryBook
-        run: npm run build-storybook
+        run: yarn build-storybook
 
       - name: Deploy StoryBook
-        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        run: yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
