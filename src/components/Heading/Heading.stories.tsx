@@ -1,54 +1,52 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { Heading, HeadingProps } from ".";
+import { Meta, StoryObj } from '@storybook/react'
+import { Heading, HeadingProps } from '.'
 
 export default {
   title: 'Components/Heading',
   component: Heading,
   args: {
     children: 'Titulo',
-    size: 'md'
+    size: 'md',
   },
   argTypes: {
     size: {
       options: ['sm', 'md', 'lg'],
       control: {
-        type: 'inline-radio'
-      }
-    }
-  }
+        type: 'inline-radio',
+      },
+    },
+  },
 } as Meta<HeadingProps>
 
 export const Default: StoryObj<HeadingProps> = {}
 
 export const Small: StoryObj<HeadingProps> = {
   args: {
-    size: 'sm'
-  }
+    size: 'sm',
+  },
 }
 
 export const Large: StoryObj<HeadingProps> = {
   args: {
-    size: 'lg'
-  }
+    size: 'lg',
+  },
 }
 
 export const CustomComponent: StoryObj<HeadingProps> = {
   args: {
     asChild: true,
-    children: (
-      <h1>Test with tag h1</h1>
-    )
+    children: <h1>Test with tag h1</h1>,
   },
   argTypes: {
     children: {
-     table: {
-      disable: true
-     }
+      table: {
+        disable: true,
+      },
     },
     asChild: {
       table: {
-        disable: true
-      }
-    }
-  }
+        disable: true,
+      },
+    },
+  },
 }

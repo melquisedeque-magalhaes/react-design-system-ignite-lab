@@ -20,6 +20,12 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: Linter
+        run: yarn lint
+
+      - name: Typecheck
+        run: yarn typecheck
+
       - name: Build StoryBook
         run: yarn build-storybook
 
