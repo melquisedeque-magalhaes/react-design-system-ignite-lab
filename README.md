@@ -3,7 +3,7 @@
 </div>
 <br>
 
-# IgniteLab | ReactJS
+# IgniteLab 2 | ReactJS
 Terceira edição do IgniteLAB, um evento com foco total em front-end, utilizando as ferramentas mais atuais.<br>
 Nesta edição, será construido um Design System do Figma ao React de um projeto front-end. Serão utilizadas algumas ferramentas como: Storybook, radix, tailwindcss e diversas outras ferramentas do ecossistema REACTJS.
 <br>
