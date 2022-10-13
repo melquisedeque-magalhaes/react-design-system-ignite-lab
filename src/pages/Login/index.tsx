@@ -7,7 +7,7 @@ import { Text } from '../../components/Text'
 
 export function Login() {
   return (
-    <div className="w-screen h-screen bg-gray-900 flex items-center justify-center flex-col">
+    <main className="w-screen h-screen bg-gray-900 flex items-center justify-center flex-col">
       <Header />
 
       <form className="flex flex-col items-stretch mt-8 gap-8">
@@ -66,6 +66,6 @@ export function Login() {
           </Text>
         </footer>
       </form>
-    </div>
+    </main>
   )
 }
