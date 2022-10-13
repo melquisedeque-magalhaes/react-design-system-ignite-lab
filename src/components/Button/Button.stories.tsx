@@ -6,6 +6,13 @@ export default {
   component: Button,
   args: {
     children: 'Button Component'
+  },
+  argTypes: {
+    asChild: {
+      table: {
+        disable: true
+      }
+    }
   }
 } as Meta<ButtonProps>
 
