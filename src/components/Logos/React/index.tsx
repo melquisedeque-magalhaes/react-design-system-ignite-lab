@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { SVGAttributes } from 'react'
 
 interface LogoReactProps extends SVGAttributes<HTMLOrSVGElement> {}

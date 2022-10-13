@@ -1,5 +1,5 @@
-import { Slot } from "@radix-ui/react-slot"
-import { InputHTMLAttributes, ReactNode } from "react"
+import { Slot } from '@radix-ui/react-slot'
+import { InputHTMLAttributes, ReactNode } from 'react'
 
 export interface InputContainerProps {
   children: ReactNode
@@ -18,23 +18,22 @@ interface InputIconProps {
 }
 
 function InputIcon({ children }: InputIconProps) {
-  return (
-    <Slot className="h-6 w-6 text-gray-400">
-      {children}
-    </Slot>
-  )
+  return <Slot className="h-6 w-6 text-gray-400">{children}</Slot>
 }
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
 function Input({ ...rest }: InputProps) {
-  return(
-    <input {...rest} className="text-gray-100 text-xs placeholder:text-gray-400 bg-transparent flex-1 outline-none" />
+  return (
+    <input
+      {...rest}
+      className="text-gray-100 text-xs placeholder:text-gray-400 bg-transparent flex-1 outline-none"
+    />
   )
 }
 
 export const TextInput = {
   Container: InputContainer,
-  Input: Input,
-  Icon: InputIcon
+  Input,
+  Icon: InputIcon,
 }
