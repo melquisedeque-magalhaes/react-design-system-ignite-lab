@@ -26,6 +26,9 @@ jobs:
       - name: Typecheck
         run: yarn typecheck
 
+      - name: Tests StoryBooks
+        run: yarn test-storybook
+
       - name: Build StoryBook
         run: yarn build-storybook
 

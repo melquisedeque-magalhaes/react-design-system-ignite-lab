@@ -1,4 +1,5 @@
 import { Envelope, Lock } from 'phosphor-react'
+import { FormEvent, useState } from 'react'
 import { Button } from '../../components/Button'
 import { CheckBox } from '../../components/CheckBox'
 import { Header } from '../../components/Header'
@@ -6,11 +7,24 @@ import { TextInput } from '../../components/Input'
 import { Text } from '../../components/Text'
 
 export function Login() {
+  const [isUserSignedIn, setIsUserSignedIn] = useState(false)
+
+  function handleSigIn(event: FormEvent) {
+    event.preventDefault()
+
+    setIsUserSignedIn(true)
+  }
+
   return (
     <main className="w-screen h-screen bg-gray-900 flex items-center justify-center flex-col">
       <Header />
 
-      <form className="flex flex-col items-stretch mt-8 gap-8">
+      <form
+        onSubmit={handleSigIn}
+        className="flex flex-col items-stretch mt-8 gap-8"
+      >
+        {isUserSignedIn && <Text>Login Realizado!</Text>}
+
         <div className="flex flex-col gap-5">
           <label htmlFor="email" className="flex flex-col gap-4">
             <Text size="md" className="font-semibold">
