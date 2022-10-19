@@ -26,11 +26,6 @@ jobs:
       - name: Typecheck
         run: yarn typecheck
 
-      - name: Tests StoryBooks
-        run: yarn test-storybook
-        env:
-          TARGET_URL: '${{ github.event.deployment_status.target_url }}'
-
       - name: Build StoryBook
         run: yarn build-storybook
 
